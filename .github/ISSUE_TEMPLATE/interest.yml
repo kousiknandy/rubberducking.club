@@ -1,43 +1,72 @@
-name: I'm interested
-description: Express interest in a maieutic rubber ducking session.
+name: I'd like a go
+description: Ask for a system design session with a deliberately unhelpful duck.
 title: "Interested: "
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for biting. Three fields, about a minute.
+        Five fields, most of them optional. Ninety seconds.
 
-        Heads up that issues are public — keep anything confidential vague. "A concurrency bug I can't reproduce" is plenty.
-  - type: textarea
-    id: problem
+        Issues are public, so leave your employer out of it — "a large payments company" is plenty.
+  - type: input
+    id: role
     attributes:
-      label: What are you stuck on?
-      description: A bug, a design you can't commit to, a decision you keep re-litigating. Rough is fine — if you could describe it cleanly you probably wouldn't need the duck.
-      placeholder: I keep going back and forth on whether to...
+      label: What role are you preparing for?
+      description: Level and rough area. Precision unnecessary.
+      placeholder: Senior backend / Staff infra / honestly whatever answers the phone
     validations:
       required: true
+  - type: dropdown
+    id: when
+    attributes:
+      label: When's the interview?
+      options:
+        - This week (bold of you to be here)
+        - Within the month
+        - Nothing booked, preparing anyway
+        - Not looking, just want to practise thinking out loud
+    validations:
+      required: true
+  - type: textarea
+    id: weakness
+    attributes:
+      label: What do you suspect you're worst at?
+      description: Guess. Being wrong about this is itself useful information, and it tells me where to sit quietly and wait.
+      placeholder: I think I commit to a design too early / I go vague on the storage layer / I talk for forty minutes without drawing anything
+    validations:
+      required: false
   - type: input
     id: timezone
     attributes:
       label: Timezone
-      description: So a session can be scheduled at a civilised hour for both of us.
       placeholder: IST / UTC+5:30
     validations:
       required: true
   - type: dropdown
     id: format
     attributes:
-      label: Preferred format
+      label: Format
+      description: Live is the point — the skill being rehearsed is persuading a human in real time. Async works, but it rehearses a different thing.
       options:
-        - A 30-minute call
+        - 45 minutes, live (the real shape of it)
+        - 30 minutes, live
         - Async, in writing
-        - Either works
+    validations:
+      required: true
+  - type: dropdown
+    id: reciprocate
+    attributes:
+      label: Would you sit on the other side of the table for someone else?
+      description: Answer honestly rather than generously — an honest no is more useful to me than a polite maybe.
+      options:
+        - "Yes"
+        - "No"
+        - Maybe, once I've seen how it goes
     validations:
       required: true
   - type: textarea
     id: anything_else
     attributes:
       label: Anything else?
-      description: Optional.
     validations:
       required: false

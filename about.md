@@ -4,42 +4,51 @@ permalink: /about/
 title: About
 ---
 
-## Why this exists
+## Where this came from
 
-The moment a hard problem became tractable, in my experience, was almost never the moment someone handed me an answer. It was the moment someone asked the question I'd been carefully stepping around.
+I've watched a lot of capable engineers walk into system design rounds and lose on a technicality of their own making.
 
-Rubber duck debugging is the folk version of this. It works — the act of narrating a problem to something that can't help you forces you to make your reasoning explicit, and explicit reasoning is where the hole becomes visible. But a plastic duck has one move: silence. It can't notice that you said "and then it obviously just retries" in a voice that suggests you have never once read that retry code.
+Not through ignorance. They'd done the reading, they knew the components, they could recite the CAP theorem with the weary air of someone who has recited it before. What sank them was single-tracking: choosing a design early, becoming fond of it, and spending the rest of the hour protecting it from the interviewer rather than pressure-testing it out loud. When the trade-off question finally arrived — *what happens when this region goes down?* — they defended instead of thinking. Defence looks identical to rigidity from the other side of the table, and rigidity is the one thing that round is specifically built to detect.
 
-So: a duck that asks questions back.
+The odd part is that most of them knew the answer. They just hadn't practised finding it in front of anybody.
 
-## Maieutics, briefly
+## Why the existing option doesn't fix it
 
-Socrates described himself as a midwife rather than a teacher. He claimed to know nothing worth transmitting, and that his whole method was to ask questions until the person he was talking to gave birth to the idea themselves. The Greek word for that midwifery is where *maieutic* comes from.
+Paid mock interviews exist and some are excellent. They also cost real money and are deliberately adversarial, which produces a predictable outcome: people save them for when they feel prepared.
 
-The reason this is more than a flattering metaphor is that it changes who owns the conclusion. An answer you were given is a thing you have to trust. An answer you were walked into is a thing you understand — you know which assumptions it rests on, because you're the one who named them out loud.
+Nobody feels prepared. So the booking slides by a week, then a fortnight, and the first genuine adversarial system design conversation of their life happens at a company they actually wanted to work for. The expensive thing gets rationed into uselessness, and the free thing — a stranger who'll let you flail harmlessly for forty-five minutes — doesn't exist.
 
-## Why questions beat answers when you're stuck
+That's the gap. It isn't a market gap, it's a stakes gap.
 
-- **You have more context than any advisor.** Someone with a confident opinion about your architecture has maybe five percent of what you know about it. Their answer is a guess wearing a suit. Your answer, pried out properly, isn't.
-- **Being stuck is usually a hidden premise, not missing knowledge.** You're not blocked because you lack a fact. You're blocked because something you're treating as fixed isn't.
-- **Explaining is compression, and compression exposes gaps.** You can't summarise a thing you don't understand without the summary tearing somewhere.
-- **A stranger can ask the naive question.** Your teammates have all absorbed the same assumptions you have. I haven't, so I get to ask the embarrassing one.
+## The method, such as it is
 
-## What I'm actually doing during a session
+The rule I hold myself to is that I never supply the conflict. I only point at where it already is.
 
-Very little, on purpose. Mostly:
+- **Interrupt rarely.** Perhaps every ten minutes. Constant questioning turns into an interrogation, and you start performing for me instead of thinking.
+- **Ask about the thing you said quickly.** Every design contains one sentence delivered faster and quieter than the rest. That sentence is load-bearing and you know it.
+- **Never accept "obviously".** Especially not as a step. Particularly not as a step you're clearly relieved to have got past.
+- **Advocate for the devil even when the devil is losing.** Correct answers get the same raised eyebrow as wrong ones. You must not be able to read your score off my face — that's not available on Thursday either.
+- **Refuse to be the expert.** The moment I start explaining, you stop reasoning and start taking notes. Notes are useless to you. You cannot read notes aloud in an interview.
 
-- asking you to define a word you used casually
-- asking how you'd know if the opposite were true
-- asking what you'd do if the constraint you just cited disappeared
-- noticing the sentence you said quickly and quietly, and going back to it
-- refusing to accept "obviously" as a step
+The intended outcome is that you talk yourself out of a bad decision, or into a good one you can now defend in a sentence. Either way it was yours, which means it'll still be there under pressure. Advice evaporates the moment somebody frowns at it.
 
-If I catch myself about to give advice, the correct move is to turn it into a question instead. I don't always manage it.
+## The pretentious bit
 
-<!-- TODO(kousik): a couple of sentences about who you are — what you work on, why you're
-     credible as a question-asker. Keep it short; this page is about the idea, not a CV. -->
+The domain says *maieutic* because that's the actual name for this, and I'd rather use the real word once than a management-consultancy synonym forever.
+
+Socrates claimed he taught nobody anything — that he had no knowledge to transmit and his entire method was to ask questions until the other person delivered the idea themselves. He called it midwifery. *Maieutic* is the adjective.
+
+The practical content of that flourish: an answer you were handed is something you have to trust, whereas an answer you were walked into is something you understand — you know which assumptions it rests on, because you're the one who said them out loud and heard how they sounded. In a system design round, that difference is the whole difference. You will be asked to justify your design by somebody whose job is to look unconvinced. You can only justify what you actually derived.
+
+Also, "rubberducking.club" was available, which weighed on the decision more than I'd like to admit.
+
+<!-- TODO(kousik): two or three sentences on who you are — what you build, how many of these
+     rounds you've sat on the interviewer's side of. This is the one place on the site where
+     credibility matters, because "trust me to play dumb correctly" is a real claim. Keep it
+     dry; the page is already doing enough talking. -->
 
 ## The state of the club
 
-Experimental, unpaid, and one person deep. It exists to find out whether anyone wants it. If you do, [say so]({{ '/contact/' | relative_url }}) — that's the entire roadmap for the moment.
+One duck. Deliberately unfunded, ungraded, and unscaled. It exists to find out whether anybody wants it, and if nobody does that's a perfectly respectable result that cost a weekend and a domain name.
+
+If you want a go, [say so]({{ '/contact/' | relative_url }}).

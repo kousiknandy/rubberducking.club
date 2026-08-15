@@ -1,5 +1,7 @@
 title: Rubber Ducking Club
-description: Mock interviews for people who aren't ready for mock interviews
+# Shown in the theme header on every page, and used as the tagline in <title>.
+# Per-page `description:` front matter overrides it for meta/link-preview text.
+description: Maieutic Rubber Duck On Call
 url: https://rubberducking.club
 lang: en
 

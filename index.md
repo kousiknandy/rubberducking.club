@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /
+description: Mock interviews for people who aren't ready for mock interviews. Free system design practice against a duck that asks one question every ten minutes and refuses to tell you the answer.
 ---
 
 You have forty-five minutes to design Twitter for a stranger who already knows the answer and has no intention of sharing it.
@@ -47,7 +48,7 @@ Then come here, because there's exactly one thing it cannot rehearse: sitting op
 
 You aren't assessed on whether you know things. You're assessed on whether you can move an idea out of your head and into the head of a tired human who is deliberately giving you nothing back. That's a performance under adversarial conditions, and it does not transfer from a chat window where the audience is contractually delighted with you.
 
-## Why this is free
+## Mock interviews for people who aren't ready for mock interviews
 
 The mock interview market has a design flaw. It's expensive and it's adversarial, so people ration it for when they're *ready*. Nobody is ever ready. The session gets postponed, then rescheduled, then quietly never booked — and the first real interview becomes the practice one. At a company you wanted. Marvellous.
 

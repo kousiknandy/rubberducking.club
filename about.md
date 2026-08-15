@@ -2,6 +2,7 @@
 layout: page
 permalink: /about/
 title: About
+description: Why capable engineers lose system design rounds on a technicality of their own making, and the five rules a deliberately unhelpful duck holds itself to.
 ---
 
 ## Where this came from

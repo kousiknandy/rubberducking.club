@@ -2,6 +2,7 @@
 layout: page
 permalink: /contact/
 title: Contact
+description: Open an issue. That's the entire booking system, and the friction is the first question of the session.
 ---
 
 ## One way in

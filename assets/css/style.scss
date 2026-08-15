@@ -57,4 +57,16 @@ $duck: #f5c800;
     padding-left: 1em;
     font-style: italic;
   }
+
+  // Socratic dialogue. Upright rather than italic (it's speech, not an aside)
+  // and a touch smaller, so a long exchange doesn't shout over the prose.
+  // Applied via kramdown's `{: .dialog}` on the line after the blockquote.
+  blockquote.dialog {
+    font-style: normal;
+    font-size: 0.9em;
+
+    p {
+      margin: 0.55em 0;
+    }
+  }
 }

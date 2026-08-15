@@ -32,6 +32,23 @@ You'll answer, because the silence is unbearable. And in answering you'll discov
 
 I won't tell you the answer. I'm a duck. Ducks know nothing about distributed systems.
 
+## Roughly like this
+
+> **Candidate:** Reads go to the replicas, writes to the primary. That's how we take the read volume.
+>
+> **Duck:** Right. So I post a comment, and the page reloads. Where does that read come from?
+>
+> **Candidate:** A replica. …Oh.
+>
+> **Duck:** Oh?
+>
+> **Candidate:** My own comment might not be there yet. I've just designed a system where people watch their own posts vanish.
+{: .dialog}
+
+Note what the duck didn't do. It didn't mention replication lag, it didn't say the word "consistency", and it certainly didn't offer a fix. It asked where one specific read came from.
+
+That's the whole technique, and it's why an abstract question is useless here. "What about consistency?" invites a paragraph of theory you've already rehearsed. "I post a comment, where does that read come from?" makes you trace an arrow, out loud, and there's nowhere to go.
+
 ## Being right won't save you
 
 If you're right, I'll ask why anyway, look faintly unconvinced, and wait.

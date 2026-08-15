@@ -1,0 +1,14 @@
+<nav class="site-nav">
+  {% assign pages = "/,home|/about/,about|/contact/,contact" | split: "|" %}
+  {% for entry in pages %}
+    {% assign parts = entry | split: "," %}
+    {% assign url = parts[0] %}
+    {% assign label = parts[1] %}
+    {% if page.url == url %}
+      <span class="current">{{ label }}</span>
+    {% else %}
+      <a href="{{ url | relative_url }}">{{ label }}</a>
+    {% endif %}
+    {% unless forloop.last %}<span class="sep">/</span>{% endunless %}
+  {% endfor %}
+</nav>

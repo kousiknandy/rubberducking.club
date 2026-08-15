@@ -1,0 +1,43 @@
+name: I'm interested
+description: Express interest in a maieutic rubber ducking session.
+title: "Interested: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for biting. Three fields, about a minute.
+
+        Heads up that issues are public — keep anything confidential vague. "A concurrency bug I can't reproduce" is plenty.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you stuck on?
+      description: A bug, a design you can't commit to, a decision you keep re-litigating. Rough is fine — if you could describe it cleanly you probably wouldn't need the duck.
+      placeholder: I keep going back and forth on whether to...
+    validations:
+      required: true
+  - type: input
+    id: timezone
+    attributes:
+      label: Timezone
+      description: So a session can be scheduled at a civilised hour for both of us.
+      placeholder: IST / UTC+5:30
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Preferred format
+      options:
+        - A 30-minute call
+        - Async, in writing
+        - Either works
+    validations:
+      required: true
+  - type: textarea
+    id: anything_else
+    attributes:
+      label: Anything else?
+      description: Optional.
+    validations:
+      required: false

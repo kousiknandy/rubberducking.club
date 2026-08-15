@@ -1,0 +1,60 @@
+---
+---
+
+// NB: with `remote_theme` (rather than `theme`), `site.theme` is unset, so the
+// theme README's `@import "{{ site.theme }}"` would compile to `@import ""`
+// and fail the build. Import the sass entrypoint by name instead.
+@import "jekyll-theme-hacker";
+
+$duck: #f5c800;
+
+.site-nav {
+  margin: 0 0 2.5rem;
+  letter-spacing: 0.02em;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .current {
+    color: $duck;
+    font-weight: bold;
+
+    &::before {
+      content: "> ";
+    }
+  }
+
+  .sep {
+    margin: 0 0.4rem;
+    opacity: 0.35;
+  }
+}
+
+#main_content {
+  h2 {
+    margin-top: 2.2em;
+  }
+
+  h3 {
+    margin-top: 1.8em;
+  }
+
+  li {
+    margin-bottom: 0.5em;
+  }
+
+  strong {
+    color: $duck;
+  }
+
+  blockquote {
+    border-left: 3px solid $duck;
+    padding-left: 1em;
+    font-style: italic;
+  }
+}
